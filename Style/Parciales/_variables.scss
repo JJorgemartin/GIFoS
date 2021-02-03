@@ -1,0 +1,37 @@
+$colorComun: #572EE5;
+$colorBurger: rgba(87, 46, 229, 0.9);
+$colorGifCtn: #f3f5f8;
+$colorFondo: #ffff;
+$colorGifos:  #50E3C2;
+$colorLetras2: #000000;
+$colorGifCtn-Dark: #222326;
+$colorFondo-Dark: #37383C;
+$colorFondBurger-Dark: #000000;
+$colorLetras-Dark: #ffff;
+$colorBorde-Dark: #ffff;
+
+
+
+.light-theme{
+    --color-principal: #{$colorFondo };
+    --color-secundario: #{$colorGifCtn};
+    --color-terciario: #{$colorBurger};
+    --color-hr: #{$colorComun};
+    --color-letras: #{$colorComun};
+    --color-letras2: #{$colorLetras2};
+    --color-letrasburger: #{$colorFondo};
+    --color-borde: #{$colorComun};
+    --color-gifos: #{$colorGifos}; 
+}
+
+.dark-theme{
+    --color-principal: #{$colorFondo-Dark};
+    --color-secundario: #{$colorGifCtn-Dark};
+    --color-terciario: #{$colorFondBurger-Dark};
+    --color-hr: #{$colorFondo-Dark};
+    --color-letras: #{$colorLetras-Dark};
+    --color-letras2: #{$colorLetras-Dark};
+    --color-letrasburger: #{$colorFondo};
+    --color-borde: #{$colorBorde-Dark};
+    --color-gifos: #{$colorGifos};
+}

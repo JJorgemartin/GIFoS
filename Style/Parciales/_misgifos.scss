@@ -1,0 +1,17 @@
+.ctn-misGif{
+    .ctn-misGifos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr fr 1fr;
+    gap: 15px;
+    justify-content: center;;
+    margin-right: 15px;
+    margin-left: 15px;
+    }
+    .div-button{
+        text-align: center;
+        margin: 124px 78px;
+    
+    }
+
+}

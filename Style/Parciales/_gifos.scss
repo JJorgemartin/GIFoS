@@ -1,0 +1,45 @@
+.gifos{
+    // display: block;
+    margin-top: 10px;
+    margin-bottom: 42px;
+    padding-bottom: 42px;
+    padding-top: 20px;
+    background-color: var(--color-secundario);
+    h2{
+        color: var(--color-letras);
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 46px;
+    }
+    h3{
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        text-align: center;
+        margin-top: 7px;
+        margin-bottom: 32px;
+        color: var(--color-letras2);
+    }
+    #ctnGif{
+        display: flex;
+        flex-direction: row;
+        overflow: auto;
+        margin-left: 22px;
+        img{
+            margin-left: 22px;
+            width: 243px;
+            height: 187px;
+        }
+    }
+    br{
+        display: block;
+    }
+    
+
+
+}
+
+body{
+    background-color: var(--color-principal);
+}
