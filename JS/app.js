@@ -6,10 +6,10 @@ burger.addEventListener('click', openList);
 //Seccion de burger
 function openList(){
     if(titHiden.style.display === 'none') {
-        burger.src = '/imagenes/close.svg' ;
+        burger.src = './imagenes/close.svg' ;
         titHiden.style.display = 'block';
     } else {
-        burger.src = '/imagenes/burger.svg';
+        burger.src = './imagenes/burger.svg';
         titHiden.style.display = 'none';
     }
 }
@@ -63,7 +63,7 @@ searchBar.addEventListener('focusin', () => {
 });
 
 searchIcon.addEventListener('click', () => {
-    searchIcon.src = '/imagenes/icon-search.svg';
+    searchIcon.src = './imagenes/icon-search.svg';
     resultSection.style.display = 'block';
     searchBar.value = '';
     searchTitle.innerHTML = '';
