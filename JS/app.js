@@ -57,7 +57,7 @@ let btnMore = document.getElementById('btnMore');
 
 
 searchBar.addEventListener('focusin', () => {
-    searchIcon.src = '/imagenes/close.svg';
+    searchIcon.src = './imagenes/close.svg';
     resultSection.style.display = 'none'
 
 });
