@@ -397,6 +397,21 @@ body {
     width: 557px;
     height: 395px;
   }
+  .resultsSearch #resultsImg {
+    margin-left: 150px;
+    margin-right: 150px;
+    -ms-grid-columns: 23% 23% 23% 23%;
+        grid-template-columns: 23% 23% 23% 23%;
+    -webkit-column-gap: 3%;
+            column-gap: 3%;
+  }
+  .resultsSearch #resultsImg img {
+    height: 200px;
+  }
+  .resultsSearch .ctnbuttonMore img {
+    height: 15vw;
+    width: 18vw;
+  }
 }
 
 @media only screen and (min-width: 768px) {
