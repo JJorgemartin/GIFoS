@@ -105,7 +105,7 @@ const darkTheme = 'dark-theme';
 darkThemeButton.addEventListener('click', () => {
     document.body.classList.toggle(darkTheme);
     if(document.body.classList.contains(darkTheme)){
-        logo.src = './imagenes/logo-modo-noc.svg';
+        logo.src = './imagenes/Logo-modo-noc.svg';
         creaGif.src = './imagenes/CTA-crear-gifo-modo-noc.svg'
         sliderR.src = './imagenes/button-slider-right-md-noct.svg'
         sliderL.src = './imagenes/button-slider-left-md-noct.svg'
