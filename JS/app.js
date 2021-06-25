@@ -451,16 +451,16 @@ async function showModal(id) {
     const maxGifFav = document.getElementById("maxGifFav");
     const maxGifDown = document.getElementById("maxGifDown");
     maxGifFav.addEventListener("mouseenter", () => {
-        maxGifFav.src = "./imagenes/icon-fav-hover.svg";
+        maxGifFav.src = "/imagenes/icon-fav-hover.svg";
     });
     maxGifFav.addEventListener("mouseout", () => {
-        maxGifFav.src = "./imagenes/icon-fav.svg";
+        maxGifFav.src = "/imagenes/icon-fav.svg";
     });
     maxGifDown.addEventListener("mouseenter", () => {
-        maxGifDown.src = "./imagenes/icon-download-hover.svg";
+        maxGifDown.src = "/imagenes/icon-download-hover.svg";
     });
     maxGifDown.addEventListener("mouseout", () => {
-        maxGifDown.src = "./imagenes/icon-download.svg";
+        maxGifDown.src = "/imagenes/icon-download.svg";
     });
 }
 
