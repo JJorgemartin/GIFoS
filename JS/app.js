@@ -8,17 +8,17 @@ burger.addEventListener('click', openList);
 function openList(){
     if(titHiden.style.display === 'none') {
         if(document.body.classList.contains(darkTheme)){
-            burger.src = '/imagenes/close-modo-noct.svg'
+            burger.src = './imagenes/close-modo-noct.svg'
         } else{
-            burger.src = '/imagenes/close.svg'
+            burger.src = './imagenes/close.svg'
         };
         
         titHiden.style.display = 'block';
     } else {
         if(document.body.classList.contains(darkTheme)){
-            burger.src = '/imagenes/burger-modo-noct.svg'
+            burger.src = './imagenes/burger-modo-noct.svg'
         } else{
-            burger.src = '/imagenes/burger.svg'
+            burger.src = './imagenes/burger.svg'
         };
         
         titHiden.style.display = 'none';
@@ -105,19 +105,19 @@ const darkTheme = 'dark-theme';
 darkThemeButton.addEventListener('click', () => {
     document.body.classList.toggle(darkTheme);
     if(document.body.classList.contains(darkTheme)){
-        logo.src = '/imagenes/logo-modo-noc.svg';
-        creaGif.src = '/imagenes/CTA-crear-gifo-modo-noc.svg'
-        sliderR.src = '/imagenes/button-slider-right-md-noct.svg'
-        sliderL.src = '/imagenes/button-slider-left-md-noct.svg'
-        searchIcon.src = '/imagenes/icon-search-modo-noct.svg'
-        burger.src = '/imagenes/burger-modo-noct.svg'
+        logo.src = './imagenes/logo-modo-noc.svg';
+        creaGif.src = './imagenes/CTA-crear-gifo-modo-noc.svg'
+        sliderR.src = './imagenes/button-slider-right-md-noct.svg'
+        sliderL.src = './imagenes/button-slider-left-md-noct.svg'
+        searchIcon.src = './imagenes/icon-search-modo-noct.svg'
+        burger.src = './imagenes/burger-modo-noct.svg'
     } else {
-        logo.src = '/imagenes/logo-desktop.svg'
-        creaGif.src = '/imagenes/button-crear-gifo.svg'
-        sliderR.src = '/imagenes/Button-Slider-right.svg'
-        sliderL.src = '/imagenes/button-slider-left.svg'
-        searchIcon.src = '/imagenes/icon-search.svg'
-        burger.src = '/imagenes/burger.svg'
+        logo.src = './imagenes/logo-desktop.svg'
+        creaGif.src = './imagenes/button-crear-gifo.svg'
+        sliderR.src = './imagenes/Button-Slider-right.svg'
+        sliderL.src = './imagenes/button-slider-left.svg'
+        searchIcon.src = './imagenes/icon-search.svg'
+        burger.src = './imagenes/burger.svg'
     }
 
 });
@@ -139,85 +139,85 @@ if (selectedTheme) {
 
 creaGif.addEventListener("mouseenter", () => {
     if (document.body.classList.contains(darkTheme)) {
-        creaGif.src = "/imagenes/CTA-crear-gifo-hover-modo-noc.svg";
+        creaGif.src = "./imagenes/CTA-crear-gifo-hover-modo-noc.svg";
     } else {
-        creaGif.src = "/imagenes/CTA-crear-gifo-hover.svg";
+        creaGif.src = "./imagenes/CTA-crear-gifo-hover.svg";
     }
 });
 creaGif.addEventListener("mousedown", () => {
     if (document.body.classList.contains(darkTheme)) {
-        creaGif.src = "/imagenes/CTA-crear-gifo-active-modo-noc.svg";
+        creaGif.src = "./imagenes/CTA-crear-gifo-active-modo-noc.svg";
     } else {
-        creaGif.src = "/imagenes/CTA-crear-gifo-active.svg";
+        creaGif.src = "./imagenes/CTA-crear-gifo-active.svg";
     }
 });
 creaGif.addEventListener("mouseout", () => {
     if (document.body.classList.contains(darkTheme)) {
-        creaGif.src = "/imagenes/CTA-crear-gifo-modo-noc.svg";
+        creaGif.src = "./imagenes/CTA-crear-gifo-modo-noc.svg";
     } else {
-        creaGif.src = "/imagenes/button-crear-gifo.svg";
+        creaGif.src = "./imagenes/button-crear-gifo.svg";
     }
 });
 
 if (sliderL !== null) {
     sliderL.addEventListener("mouseenter", () => {
-        sliderL.src = "/imagenes/button-slider-left-hover.svg";
+        sliderL.src = "./imagenes/button-slider-left-hover.svg";
     });
     sliderL.addEventListener("mouseout", () => {
         if (document.body.classList.contains(darkTheme)) {
-            sliderL.src = "/imagenes/button-slider-left-md-noct.svg";
+            sliderL.src = "./imagenes/button-slider-left-md-noct.svg";
             
         } else {
-            sliderL.src = "/imagenes/button-slider-left.svg";
+            sliderL.src = "./imagenes/button-slider-left.svg";
         }
     });
     sliderR.addEventListener("mouseenter", () => {
-        sliderR.src = "/imagenes/Button-Slider-right-hover.svg";
+        sliderR.src = "./imagenes/Button-Slider-right-hover.svg";
     });
     sliderR.addEventListener("mouseout", () => {
         if (document.body.classList.contains(darkTheme)) {
-            sliderR.src = "/imagenes/button-slider-right-md-noct.svg";
+            sliderR.src = "./imagenes/button-slider-right-md-noct.svg";
             
         } else {
-            sliderR.src = "/imagenes/Button-Slider-right.svg";
+            sliderR.src = "./imagenes/Button-Slider-right.svg";
         }
     });
 }
 
 iconFb.addEventListener("mouseenter", () => {
     if (document.body.classList.contains(darkTheme)) {
-        iconFb.src = "/imagenes/icon_facebook_noc.svg";
+        iconFb.src = "./imagenes/icon_facebook_noc.svg";
         
     } else {
-        iconFb.src = "/imagenes/icon_facebook_hover.svg";
+        iconFb.src = "./imagenes/icon_facebook_hover.svg";
     }
 });
 iconFb.addEventListener("mouseout", () => {
-    iconFb.src = "/imagenes/icon_facebook.svg";
+    iconFb.src = "./imagenes/icon_facebook.svg";
 });
 
 iconTw.addEventListener("mouseenter", () => {
     if (document.body.classList.contains(darkTheme)) {
-        iconTw.src = "/imagenes/icon_twitter_noc.svg";
+        iconTw.src = "./imagenes/icon_twitter_noc.svg";
         
     } else {
-        iconTw.src = "/imagenes/icon-twitter-hover.svg";
+        iconTw.src = "./imagenes/icon-twitter-hover.svg";
     }
 });
 iconTw.addEventListener("mouseout", () => {
-    iconTw.src = "/imagenes/icon-twitter.svg";
+    iconTw.src = "./imagenes/icon-twitter.svg";
 });
 
 iconIg.addEventListener("mouseenter", () => {
     if (document.body.classList.contains(darkTheme)) {
-        iconIg.src = "/imagenes/icon_instagram_noc.svg";
+        iconIg.src = "./imagenes/icon_instagram_noc.svg";
         
     } else {
-        iconIg.src = "/imagenes/icon_instagram-hover.svg";
+        iconIg.src = "./imagenes/icon_instagram-hover.svg";
     }
 });
 iconIg.addEventListener("mouseout", () => {
-    iconIg.src = "/imagenes/icon_instagram.svg";
+    iconIg.src = "./imagenes/icon_instagram.svg";
 });
 
 
@@ -237,18 +237,18 @@ let searchTotal = document.getElementById('searchTotal');
 searchBar.addEventListener('focusin', () => {
     resultSection.style.display = 'none'
     if(document.body.classList.contains(darkTheme)){
-        searchIcon.src = '/imagenes/close-modo-noct.svg'
+        searchIcon.src = './imagenes/close-modo-noct.svg'
     } else{
-        searchIcon.src = '/imagenes/close.svg'
+        searchIcon.src = './imagenes/close.svg'
     };
 
 });
 
 searchIcon.addEventListener('click', () => {
     if(document.body.classList.contains(darkTheme)){
-        searchIcon.src = '/imagenes/icon-search-modo-noct.svg'
+        searchIcon.src = './imagenes/icon-search-modo-noct.svg'
     } else{
-        searchIcon.src = '/imagenes/icon-search.svg'
+        searchIcon.src = './imagenes/icon-search.svg'
     };
     resultSection.style.display = 'block';
     searchBar.value = '';
@@ -325,7 +325,7 @@ async function showSuggestions() {
             const element = json.data[index];
             recomendTag.innerHTML += `
             <li id="sugerencia${index}">
-                <img src="/imagenes/icon-search.svg" alt="Lupa" class="lupaSugerencias">
+                <img src="./imagenes/icon-search.svg" alt="Lupa" class="lupaSugerencias">
                 <span id="textoSugg${index}" onclick="searchGif('${element.name}')">${element.name}</span>
             </li>`;
         }
@@ -451,16 +451,16 @@ async function showModal(id) {
     const maxGifFav = document.getElementById("maxGifFav");
     const maxGifDown = document.getElementById("maxGifDown");
     maxGifFav.addEventListener("mouseenter", () => {
-        maxGifFav.src = "/imagenes/icon-fav-hover.svg";
+        maxGifFav.src = "./imagenes/icon-fav-hover.svg";
     });
     maxGifFav.addEventListener("mouseout", () => {
-        maxGifFav.src = "/imagenes/icon-fav.svg";
+        maxGifFav.src = "./imagenes/icon-fav.svg";
     });
     maxGifDown.addEventListener("mouseenter", () => {
-        maxGifDown.src = "/imagenes/icon-download-hover.svg";
+        maxGifDown.src = "./imagenes/icon-download-hover.svg";
     });
     maxGifDown.addEventListener("mouseout", () => {
-        maxGifDown.src = "/imagenes/icon-download.svg";
+        maxGifDown.src = "./imagenes/icon-download.svg";
     });
 }
 
