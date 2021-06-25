@@ -7,20 +7,24 @@
     <link rel="stylesheet" href="/Style/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="light-theme">
     <header class="cabecera">
+        <hr class="hr-header">
         <nav> 
-            <hr class="hr-header">
             <div class="menu">
-                <img class="logo" src="/Imagenes/logo-mobile.svg" alt="Logo-mobile">
-                <img class="burger" src="/Imagenes/burger.svg" alt="">
+                <a href="/index.html"><img class="logo" src="/imagenes/logo-desktop.svg" alt="Logo-mobile"></a>
+                <img id="burger" src="/imagenes/burger.svg" alt="Burger"> 
             </div>
-            <!-- <ul>
-                <li> <a id="modoNocturno">MODO NOCTURNO</a></li>
-                <li> <a href="/HTML/favoritos.html">FAVORITOS</a></li>
-                <li> <a href="/HTML/misGifos.html">MIS GIFOS</a></li>
-                <button>+</button>
-            </ul> -->
+            <ul id="titHiden" class="divCtn">   
+                <div class="divCtn">
+                    <li> <a id="modoNocturno"></a></li>
+                    <hr class="hiden">
+                    <li> <a href="">Favoritos</a></li>
+                    <hr class="hiden">
+                    <li> <a href="./HTML/misGifos.html">Mis Gifos</a></li>
+                    <li><a href=""><img src="/imagenes/button-crear-gifo.svg" alt=""></a></li>
+                </div>
+            </ul>
         </nav>
     </header>
 
@@ -29,21 +33,16 @@
         <h1>Favoritos</h1>
     </div>
 
+    <div class="noFav" id="noFav">
+        <img src="/imagenes/icon-fav-sin-contenido.svg" alt="">
+            <p>"¡Guarda tu primer GIFO en Favoritos <br>para que se muestre aquí!"</p>
+    </div>
+
     <div class="ctnfavtotal">
-        <div class="ctnfav">
-            <img src="https://picsum.photos/id/123/130/100" alt="">
-            <img src="https://picsum.photos/id/154/130/100" alt="">
-            <img src="https://picsum.photos/id/168/130/100" alt="">
-            <img src="https://picsum.photos/id/176/130/100" alt="">
-            <img src="https://picsum.photos/id/186/130/100" alt="">
-            <img src="https://picsum.photos/id/193/130/100" alt="">
-            <img src="https://picsum.photos/id/144/130/100" alt="">
-            <img src="https://picsum.photos/id/125/130/100" alt="">
-            <img src="https://picsum.photos/id/140/130/100" alt="">
-            <img src="https://picsum.photos/id/126/130/100" alt="">
-            <img src="https://picsum.photos/id/351/130/100" alt="">
-            <img src="https://picsum.photos/id/158/130/100" alt="">
+        <div class="resultsFavCtn" id="ctnFavGif">
+        <!-- Aca se van a mostrar los Gif favoritos -->
         </div>
+
         
         <div class="div-button">
             <img src="/Imagenes/CTA-ver-mas.svg" alt="">
@@ -51,23 +50,37 @@
 
     </div>
 
-    < <div class="gifos">
+    <div class="gifos">
         <h2>Trending GIFOS</h2>
-        <h3>Mira los ultimos <br> GIFOS de nuestra comunidad</h3>
-        <div id="ctnGif">   </div>
+        <h3>Mira los ultimos <br class="br" > GIFOS de nuestra comunidad</h3>
+        <div id="ctnGif" >
+            <img class="button-slider" src="/imagenes/button-slider-left.svg" alt="Left" id="sliderL" />
+            <div id="ctnResultGif">   </div>
+            <img class="button-slider" src="/imagenes/Button-Slider-right.svg" alt="Right" id="sliderR" />
+        </div>
+
     </div>
     
+    <section class="modal" id="modal">
+        <h1 class="hide">Modal</h1>
+    </section>
+
     <footer class="footer">
-        <h2>Compartir en:</h2>
-        <ul>
-            <a href="www.facebook.com"><img src="/Imagenes/icon_facebook.svg" alt="fb"></a>
-            <a href="www.twitter.com"><img src="/Imagenes/icon-twitter.svg" alt="tw"></a>
-            <a href="www.instagram.com"><img src="/Imagenes/icon_instagram.svg" alt="ig"></a>
-        </ul>
-        <p>© GIFOS 2020 All Rights Reserved.</p>
+        <div class="CtnFooter">
+            <div class="CtnRedes">
+                <h2>Compartir en:</h2>
+                <ul>
+                    <a href="www.facebook.com"><img src="/imagenes/icon_facebook.svg" alt="fb"></a>
+                    <a href="www.twitter.com"><img src="/imagenes/icon-twitter.svg" alt="tw"></a>
+                    <a href="www.instagram.com"><img src="/imagenes/icon_instagram.svg" alt="ig"></a>
+                </ul>
+            </div>
+            <p>© GIFOS 2020 All Rights Reserved.</p>
+        </div>
         <hr class="hr-footer">
     </footer>
 
     <script src="/JS/appfav.js"></script>
+    <!-- <script src="/JS/app.js"></script> -->
 </body>
 </html>

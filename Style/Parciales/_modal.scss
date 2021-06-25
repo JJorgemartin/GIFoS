@@ -1,0 +1,73 @@
+.modal {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: $colorModal;
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
+    flex-direction: column;
+    align-items: center;
+    .maxGifX {
+      position: absolute;
+      width: 15.2px;
+      height: 15.2px;
+      top: 96.4px;
+      right: 278.4px;
+      cursor: pointer;
+    }
+    .maxGifImg {
+      margin-top: 160px;
+      max-height: 60%;
+    }
+    .maxGifCtn {
+      width: 695px;
+      display: flex;
+      justify-content: space-between;
+      .maxGifData {
+        p {
+          font-family: "Roboto", sans-serif;
+          margin-top: 27px;
+        }
+        h4 {
+          font-family: "Roboto", sans-serif;
+          margin-top: 6px;
+        }
+      }
+      .maxGifButtons {
+        display: flex;
+        div {
+          margin: 22px 10.5px;
+          border: 1px solid $colorModal2;
+          border-radius: 7px;
+          height: 32px;
+          width: 32px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  
+  @media screen and(max-width: 769px) {
+    .modal {
+      .maxGifX {
+        top: 64px;
+        right: 39.3px;
+      }
+      .maxGifImg {
+        width: 84.8%;
+  
+      }
+      .maxGifCtn {
+        width: 84.8%;
+        .maxGifData {
+          p {
+            margin-top: 14px;
+          }
+        }
+        // .maxGifButtons {
+  
+        // }
+      }
+  }
+  }

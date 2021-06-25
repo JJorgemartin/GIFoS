@@ -1,6 +1,8 @@
 .cabecera{
     background-color: var(--color-principal);
-    position: relative;
+    position: sticky;
+    top: 0px;
+    
     .hr-header{
         background-color: var(--color-hr);
         width: 100vw;
@@ -12,6 +14,10 @@
         display: flex;
         justify-content: space-between;
         margin: 20px 22px;
+        .logo{
+            height: 53px;
+            width: 45px;
+        }
     }
     #titHiden{
         text-align: center;
@@ -38,7 +44,8 @@
                 }
                 a{
                 text-decoration: none;
-                font-family: Montserrat-Bold;
+                font-weight: bold;
+                font-family: "Montserrat", sans-serif;
                 color: var(--color-letrasburger);
                 }
             }
@@ -63,4 +70,7 @@
 
     }
     
+}
+.add-shadow{
+    box-shadow: 0px 2px 4px 1px rgba(156, 175, 195, 0.55);
 }

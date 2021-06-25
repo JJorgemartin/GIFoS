@@ -1,49 +1,3 @@
-@media only screen and (min-width: 1020px){
-    .gifos{
-        margin-top: 25px;
-        margin-bottom: 50px;
-        h2{
-            font-size: 25px;
-        }
-        h3{
-            font-size: 18px;
-            color: var(--color-letras2);
-        }
-        br{
-            display: none;
-        }
-        
-        #ctnGif{
-            margin-top: 53px;
-            margin-right: 22px;
-            img{
-                width: 557px;
-                height: 395px;
-            }
-        }
-    }
-    
-    .resultsSearch{
-        #resultsImg{
-            margin-left: 150px;
-            margin-right: 150px;
-            grid-template-columns: 23% 23% 23% 23%;
-            column-gap: 3%;
-            img{
-                height: 200px;
-            }
-            
-        }
-        .ctnbuttonMore{
-            img{
-                height: 15vw;
-                width: 18vw;
-            }
-        }
-    }
-
-}
-
 @media only screen and (min-width: 768px){
     .cabecera{
         nav{
@@ -56,16 +10,22 @@
             position: relative;
             margin-left: 80px;
             margin-top: 40px;
-           
+            #burger{
+                display: none;
+            }
+            .logo{
+                height: 65px;
+                width: 54px;
+                
+            }
+            
         }
-        #burger{
-            display: none;
-        }
+        
         #titHiden{
             display: inline;
             background-color: var(--color-principal);
             position: relative;
-            width: 550px;
+            width: 450px;
             height: 50px;
             top: 0px;
             margin: 40px 0px 40px 42px;
@@ -74,25 +34,22 @@
             .divCtn{
                 display: flex;
                 flex-direction: row;
-                justify-content: center;
-                margin: 0px 0px 0px 0px;
+                justify-content: space-between;
+                margin: 0px 15px 0px 0px;
                 
                 li{
-                    color: var(--color-letras);
-                    // line-height: 0px;
-                    padding-left: 26px;
-                    font-weight: bold;
-                    height: 30px;
-                    img{
-                        display: inline;
-                        margin-bottom: 50px;
-                    }
+                    width: 100%;
+                    height: 90px;
                     a{
                         color: var(--color-letras);
                         font-size: 11px;
                         text-transform: uppercase; 
-                         
                     }
+                    img{
+                        display: inline;
+                        margin-bottom: 50px;
+                    }
+                    
                 }
                 #modoNocturno{
                     &::before{
@@ -114,10 +71,10 @@
         margin-bottom: 50px;
         
         h2{
-            font-size: 25px;
+            font-size: 20px;
         }
         h3{
-            font-size: 18px;
+            font-size: 15px;
             color: var(--color-letras2);
         }
         br{
@@ -148,9 +105,18 @@
             }
         
         }
+        .searchTotal{
+            width: 65%;
+            .search{
+                width: 80%;
+            }
+            input{
+                width: 65%;
+            }
+        }
         .trending{
             h2{
-                font-size: 18px;
+                font-size: 17px;
             }
             #pTrend{
                 font-size: 16px;
@@ -176,62 +142,40 @@
             }
         }
     }
+    .footer{
+        p{
+            font-size: 14px;
+            padding-left: 200px;
+        }
+    }
+    .ctnfavtotal{
+        .resultsFavCtn{
+            grid-template-columns: 27% 27% 27%;
+            column-gap: 4%;
+            margin-left: 40px;
+        }
+    }
 }
 
-//1440 esta listo -
-@media only screen and (min-width: 1440px){
+@media only screen and (min-width: 1024px){
     .cabecera{
-        nav{
-            display: flex;
-            justify-content: space-between;
-        }
-        
-        .menu{
-            display: inline-block;
-            position: relative;
-            margin-left: 80px;
-            margin-top: 40px;
-            img{
-                width: 80px;
-                height: 80px;
-            }
-           
-        }
-        #burger{
-            display: none;
-        }
+       
         #titHiden{
-            display: inline;
-            background-color: var(--color-principal);
-            position: relative;
-            width: 550px;
-            height: 50px;
-            top: 0px;
-            margin: 40px 42px 40px 42px;
-            
-            
             .divCtn{
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                margin: 0px 0px 0px 0px;
-                
                 li{
-                    color: var(--color-letras);
-                    // line-height: 0px;
-                    padding-left: 26px;
-                    font-weight: bold;
-                    height: 30px;
-                    img{
-                        display: inline;
-                        margin-bottom: 50px;
-                    }
                     a{
                         color: var(--color-letras);
-                        font-size: 17px;
-                        text-transform: uppercase; 
-                         
-                    }
+                        font-size: 11px;
+                        text-transform: uppercase;
+                        &:hover {
+                            text-decoration-line: underline;
+                            text-decoration-color: $colorGifos;
+                        }
+                        &:active {
+                            text-decoration: none;
+                            color: $colorHrInput;
+                        } 
+                    } 
                 }
                 #modoNocturno{
                     &::before{
@@ -242,16 +186,30 @@
                     }
                 }
             }
-        }
-            hr{
-                display: none;
+        }    
+    }
+    .titulo{
+        .divObserver {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 420px;
+            background-color: rgba(0, 0, 0, 0.438);
+            align-self: flex-start;
+            visibility: hidden;
+        } 
+        .searchTotal{
+            .isSticky {
+                width: 23%;
+                align-self: flex-start;
+                left: 23%;
             }
-            
+        }
+        
     }
     .gifos{
         margin-top: 25px;
         margin-bottom: 50px;
-        padding-left: 75px;
         h2{
             font-size: 25px;
         }
@@ -262,41 +220,300 @@
         br{
             display: none;
         }
-        
         #ctnGif{
+            display: flex;
+            flex-direction: row;
             margin-top: 53px;
             margin-right: 22px;
+            
+            .button-slider{
+                display: block;
+                width: 40px;
+                height: 40px;
+                margin: 11px;
+                align-self: center;
+            }
+            #ctnResultGif{
+                display: flex;
+                flex-direction: row;
+                overflow: none;
+                
+                
+                .ctnCard{
+                    width: 290px;
+                    height: 185px;
+                    margin: 11px;
+                    position: relative;
+                    .gif{
+                        position: relative;
+                        width: 290px;
+                        height: 185px;
+                        margin: 0;
+                        
+                    }   
+                    &:hover{
+                        .ctnIcon{
+                            display: block;
+                            box-sizing: border-box;
+                            width: 290px;
+                            height: 185px;
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            background-color: #562ee5b4;
+                            display: flex;
+                            justify-content: flex-end;
+                            align-items: flex-start;
+                            padding: 5.5px;
+                            .iconFav, .iconDown, .iconMax {
+                                display: block;
+                                margin: 5.5px;
+                                width: 32px;
+                                height: 32px;
+                                cursor: pointer;
+                            }
+                            .iconFav {
+                                background-image: url("/imagenes/icon-fav.svg");
+                                &:hover {
+                                  background-image: url("/imagenes/icon-fav-hover.svg");
+                                }
+                            }
+                
+                            .iconDown {
+                                background-image: url("/imagenes/icon-download.svg");
+                                &:hover {
+                                  background-image: url("/imagenes/icon-download-hover.svg");
+                                }
+                            }
+                            .iconMax {
+                                background-image: url("/imagenes/icon-max-normal.svg");
+                                &:hover {
+                                  background-image: url("/imagenes/icon-max-hover.svg");
+                                }
+                            }
+                            .gifData{
+                                display: block;
+                                position: absolute;
+                                left: 0px;
+                                top: 100px;
+                                width: 100%;
+                                height: 100px;
+                                align-self: flex-end;
+                                justify-self: flex-start;
+                                .userName{
+                                    font-size: 15px;
+                                }
+                                .userName, .gifTitle{
+                                color: white;
+                                text-align: start;
+                                margin: 6px 18px;
+                                    font-family: "Roboto", sans-serif; 
+                                }
+                            }
+                        }
+                        
+                    }
+                    
+                }
+            }
+            
+        }
+        
+    }
+    .resultsSearch{
+        #resultsImg{
+            
+            grid-template-columns: 31% 31% 31%;
+            column-gap: 3%;
+            .ctnCard{
+                width: 100%;
+                height: 325px;
+                margin: 11px;
+                position: relative;
+                .gif{
+                    position: relative;
+                    width: 100%;
+                    height: 325px;
+                    margin: 0;
+                    
+                }   
+                &:hover{
+                    .ctnIcon{
+                        display: block;
+                        box-sizing: border-box;
+                        width: 100%;
+                        height: 325px;
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        background-color: #562ee5b4;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: flex-start;
+                        padding: 5.5px;
+                        .iconFav, .iconDown, .iconMax {
+                            display: block;
+                            margin: 5.5px;
+                            width: 32px;
+                            height: 32px;
+                            cursor: pointer;
+                        }
+                        .iconFav {
+                            background-image: url("/imagenes/icon-fav.svg");
+                            &:hover {
+                              background-image: url("/imagenes/icon-fav-hover.svg");
+                            }
+                        }
+                        
+            
+                        .iconDown {
+                            background-image: url("/imagenes/icon-download.svg");
+                            &:hover {
+                              background-image: url("/imagenes/icon-download-hover.svg");
+                            }
+                        }
+                        .iconMax {
+                            background-image: url("/imagenes/icon-max-normal.svg");
+                            &:hover {
+                              background-image: url("/imagenes/icon-max-hover.svg");
+                            }
+                        }
+                        .gifData{
+                            display: block;
+                            position: absolute;
+                            left: 0px;
+                            top: 175px;
+                            width: 100%;
+                            height: 100px;
+                            align-self: flex-end;
+                            justify-self: flex-start;
+                            .userName{
+                                font-size: 15px;
+                            }
+                            .userName, .gifTitle{
+                            color: white;
+                            text-align: start;
+                            margin: 6px 18px;
+                                font-family: "Roboto", sans-serif; 
+                            }
+                        }
+                    }
+                    
+                }
+                
+            }
+            
+        }
+        .ctnbuttonMore{
             img{
-                width: 557px;
-                height: 385px;
+                height: 15vw;
+                width: 18vw;
             }
         }
     }
-    .titulo{
+    
+    .ctnfavtotal{
+    
+        .resultsFavCtn{
+            display: grid;
+            grid-template-columns: 31% 31% 31%;
+            column-gap: 2%;
+            margin-left: 7px;
+            margin-right: 10px;
+            .ctnCard{
+            width: 100%;
+            height: 325px;
+            margin: 11px;
+            position: relative;
+                .gif{
+                position: relative;
+                width: 100%;
+                height: 325px;
+                margin: 0;
+                }   
+                &:hover{
+                    .ctnIcon{
+                        display: block;
+                        box-sizing: border-box;
+                        width: 100%;
+                        height: 325px;
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        background-color: #562ee5b4;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: flex-start;
+                        padding: 5.5px;
+                        .iconFav, .iconDown, .iconMax {
+                            display: block;
+                            margin: 5.5px;
+                            width: 32px;
+                            height: 32px;
+                            cursor: pointer;
+                        }
+                        .iconFav {
+                            background-image: url("/imagenes/icon-fav.svg");
+                            &:hover {
+                            background-image: url("/imagenes/icon-fav-hover.svg");
+                            }
+                        }
+                        .itsFav {
+                            background-image: url("/imagenes/icon-trash-normal.svg");
+                            &:hover {
+                                background-image: url("/imagenes/icon-trash-hover.svg");
+                            }
+                        }
+            
+                        .iconDown {
+                            background-image: url("/imagenes/icon-download.svg");
+                            &:hover {
+                            background-image: url("/imagenes/icon-download-hover.svg");
+                            }
+                        }
+                        .iconMax {
+                            background-image: url("/imagenes/icon-max-normal.svg");
+                            &:hover {
+                            background-image: url("/imagenes/icon-max-hover.svg");
+                            }
+                        }
+                        .gifData{
+                            display: block;
+                            position: absolute;
+                            left: 0px;
+                            top: 175px;
+                            width: 100%;
+                            height: 100px;
+                            align-self: flex-end;
+                            justify-self: flex-start;
+                            .userName{
+                                font-size: 15px;
+                            }
+                            .userName, .gifTitle{
+                            color: white;
+                            text-align: start;
+                            margin: 6px 18px;
+                                font-family: "Roboto", sans-serif; 
+                            }
+                        }
+                    }
+                    
+                }
+            }    
+        }    
+
+    }
+
+    .titfav{
+        img{
+            height: 75px;
+            width: 65px;
+        }
         h1{
-            font-size: 45px;
-            text-align: center;
-            margin-left: 253px;
-            margin-right: 253px;
+            font-size: 32px;
         }
-        .img{
-            img{
-            height: 290px;
-            width: 699px;
-            text-align: center;
-            }
-        
-        }
-        .trending{
-            h2{
-                font-size: 20px;
-            }
-            #pTrend{
-                font-size: 18px;
-            }
-        }
-        
     }
+
     footer{
         .CtnFooter{
             display: flex;
@@ -305,11 +522,11 @@
             align-items: center;
             margin-bottom: 50px;
             p{
-                font-size: 18px;
+                font-size: 15px;
                 margin: 0px 58px 0px 0px;
             }
             h2{
-                font-size: 17px;
+                font-size: 15px;
             }
         }
         .CtnRedes{
@@ -328,7 +545,302 @@
             }
         }
     }
+}
+
+@media only screen and (min-width: 1440px){
+    .cabecera{
+        .menu{
+            .logo{
+                height: 100px;
+                width: 78px;
+            }
+        }
+        #titHiden{
+            margin-left: 0px;
+            width: 750px;
+            .divCtn{
+            
+                li{
+                    width: 100%;
+                    height: 100px;
+                    a{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        
+    }
+    .gifos{
+        margin-top: 25px;
+        margin-bottom: 50px;
+        h2{
+            font-size: 28px;
+        }
+        h3{
+            font-size: 23px;
+            color: var(--color-letras2);
+        }
+        br{
+            display: none;
+        }
+        
+        #ctnGif{
+            display: flex;
+            flex-direction: row;
+            margin-top: 53px;
+            margin-right: 22px;
+            
+            .button-slider{
+                width: 50px;
+                height: 50px;
+            }
+            #ctnResultGif{
+            
+                .ctnCard{
+                    width: 420px;
+                    height: 250px;
+                    margin: 11px;
+                    position: relative;
+                    .gif{
+                        position: relative;
+                        width: 420px;
+                        height: 250px;
+                        margin: 0;
+                        
+                    }   
+                    &:hover{
+                        .ctnIcon{
+                            width: 420px;
+                            height: 250px;
+                            .gifData{
+                                top: 150px;
+                            }
+                        }
+                        
+                    }
+                    
+                }
+            }
+            
+        }
+    }
+    .titulo{
+        h1{
+            font-size: 45px;
+            text-align: center;
+            margin-left: 253px;
+            margin-right: 253px;
+        }
+        .img{
+            img{
+            height: 290px;
+            width: 600px;
+            text-align: center;
+            }
+        
+        }
+        .trending{
+            h2{
+                font-size: 20px;
+            }
+            #pTrend{
+                font-size: 18px;
+            }
+        }
+        
+    }
+    footer{
+        .CtnFooter{
+            p{
+                font-size: 25px;
+                margin: 0px 58px 0px 0px;
+            }
+            h2{
+                font-size: 25px;
+            }
+        }
+        .CtnRedes{
+            ul{
+                a{
+                    img{
+                        height: 30px;
+                        width: 30px;
+                    }
+              }
+            }
+        }
+    }
     .resultsSearch{
+        #resultsImg{
+            padding-left: 12px;
+            padding-right: 10px;
+            grid-template-columns: 22% 22% 22% 22%;
+            column-gap: 4%;
+            margin-right: 140px;
+            margin-left: 140px;
+            img{
+                height: 225px;
+            }
+            
+        }
+        .ctnbuttonMore{
+            img{
+                height: 8vw;
+                width: 11vw;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 2560px){
+    .cabecera{
+        .menu{
+            .logo{
+                
+                height: 130px;
+                width: 98px;
+            }
+        }
+        #titHiden{
+            margin-top: 80px;
+            margin-left: 0px;
+            width: 1150px;
+            .divCtn{
+            
+                li{
+                    width: 100%;
+                    height: 100px;
+                    a{
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+        
+    }
+       
+    .gifos{
+        margin-top: 25px;
+        margin-bottom: 50px;
+        h2{
+            font-size: 36px;
+        }
+        h3{
+            font-size: 26px;
+            color: var(--color-letras2);
+        }
+        br{
+            display: none;
+        }
+        
+        #ctnGif{
+            display: flex;
+            flex-direction: row;
+            margin-top: 53px;
+            margin-right: 22px;
+            
+            .button-slider{
+                width: 50px;
+                height: 50px;
+            }
+            #ctnResultGif{
+            
+                .ctnCard{
+                    width: 600px;
+                    height: 425px;
+                    margin: 11px;
+                    position: relative;
+                    .gif{
+                        position: relative;
+                        width: 600px;
+                        height: 425px;
+                        margin: 0;
+                        
+                    }   
+                    &:hover{
+                        .ctnIcon{
+                            width: 600px;
+                            height: 425px;
+                            
+                            .gifData{
+                                top: 300px;
+                                .userName, .gifTitle{
+                                    font-size: 25px;
+                                }
+                            }
+                        }
+                        
+                    }
+                    
+                }
+            }
+            
+        }
+    }
+    .titulo{
+        .searchTotal{
+            width: 40%;
+            .search{
+                width: 80%;
+            }
+            input{
+                width: 45%;
+            }
+        }
+        h1{
+            font-size: 45px;
+            text-align: center;
+            margin-left: 253px;
+            margin-right: 253px;
+        }
+        .img{
+            img{
+            height: 290px;
+            width: 600px;
+            text-align: center;
+            }
+        
+        }
+        .trending{
+            h2{
+                font-size: 30px;
+            }
+            #pTrend{
+                font-size: 25px;
+            }
+        }
+        
+    }
+    footer{
+        .CtnFooter{
+            
+            p{
+                font-size: 25px;
+                margin: 0px 58px 0px 0px;
+            }
+            h2{
+                font-size: 25px;
+            }
+        }
+        .CtnRedes{
+            
+            ul{
+                
+                a{
+                    img{
+                        height: 40px;
+                        width: 40px;
+                    }
+                }
+                
+            }
+        }
+    }
+    .resultsSearch{
+        .tittleResults{
+            font-size: 35px;
+        }
         #resultsImg{
             padding-left: 12px;
             padding-right: 10px;

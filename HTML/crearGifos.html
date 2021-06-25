@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIFOS</title>
+    <link rel="stylesheet" href="/Style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+</head>
+
+<body class="light-theme">
+  <header class="cabecera">
+      <hr class="hr-header">
+      <nav> 
+          <div class="menu">
+              <a href="/index.html"><img class="logo" src="/imagenes/logo-desktop.svg" alt="Logo-mobile"></a>
+              <img id="burger" src="/imagenes/burger.svg" alt="Burger"> 
+          </div>
+          <ul id="titHiden" class="divCtn">   
+              <div class="divCtn">
+                <li> <a id="modoNocturno"></a></li>
+                <hr class="hiden">
+                <li> <a href="/HTML/favoritos.html">Favoritos</a></li>
+                <hr class="hiden">
+                <li> <a href="/HTML/misGifos.html">Mis Gifos</a></li>
+                <li><a href=""><img src="/imagenes/button-crear-gifo.svg" alt=""></a></li>
+              </div>
+          </ul>
+      </nav>
+  </header>
+
+  <main>
+    <div class="divCrearGifo">
+      <img class="camara" src="/imagenes/camara.svg" alt="camara">
+      <img src="/imagenes/element-luz-camara.svg" alt="luz-camara">
+      <div class="externo">
+        <div id="divInterno">
+          <h2 id="h2Crear">Aquí podrás<br>crear tus propios <span class="green">GIFOS</span></h2>
+          <p id="pCrear">¡Crea tu GIFO en sólo 3 pasos!<br>(sólo necesitas una cámara para grabar un video)</p>
+        </div>
+        <div id="loading" class="loading">
+          <div class="btnsCtn" id="btnsCtn">
+            <div class="downBtn" id="downBtn" onclick='downloadGif("", "my_GIFO")'></div>
+            <a href="" target="_blank" title="Abrir en GIPHY" id="linkBtn">
+              <div class="linkBtn"></div>
+            </a>
+          </div>
+          <img id="loadingImg" src="/imagenes/loader.svg" alt="Loading">
+          <h5 id="loadingH5">Estamos subiendo tu GIFO</h5>
+        </div>
+        <video id="video" class="video" ></video>
+        <img class="video" id="gifCreado" src="/imagenes/burger-modo-noct.svg" alt="gifCreado">
+        <div class="interno1"></div>
+        <div class="interno2"></div>
+        <div class="interno3"></div>
+        <div class="interno4"></div>
+      </div>
+      <img class="pelicula" src="/imagenes/pelicula.svg" alt="pelicula">
+    </div>
+    <div class="numerosCtn">
+      <div id="pasoUno" class="numero">1</div>
+      <div id="pasoDos" class="numero">2</div>
+      <div id="pasoTres" class="numero">3</div>
+    </div>
+    <div class="violetLine"></div>
+    <button id="comenzarButton" class="crearGifoButton">COMENZAR</button>
+    <button id="grabarButton" class="crearGifoButton hide">GRABAR</button>
+    <button id="finalizarButton" class="crearGifoButton hide">FINALIZAR</button>
+    <button id="subirGifoButton" class="crearGifoButton hide">SUBIR GIFO</button>
+  </main>
+
+ <footer class="footer">
+        <div class="CtnFooter">
+            <div class="CtnRedes">
+                <h2>Compartir en:</h2>
+                <ul>
+                    <a href="www.facebook.com"><img src="/imagenes/icon_facebook.svg" alt="fb"></a>
+                    <a href="www.twitter.com"><img src="/imagenes/icon-twitter.svg" alt="tw"></a>
+                    <a href="www.instagram.com"><img src="/imagenes/icon_instagram.svg" alt="ig"></a>
+                </ul>
+            </div>
+            <p>© GIFOS 2020 All Rights Reserved.</p>
+        </div>
+        <hr class="hr-footer">
+    </footer>
+
+  </body>
+  
+  <script src="/JS/crearGifos.js"></script>
+  <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+  <!-- <script src="/JS/app.js"></script> -->
+
+</html>

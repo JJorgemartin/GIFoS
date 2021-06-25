@@ -9,21 +9,21 @@
 </head>
 
 <body class="light-theme">
-    <header class="cabecera">
+    <header class="cabecera" id="header">
         <hr class="hr-header">
         <nav> 
             <div class="menu">
-                <img class="logo" src="./imagenes/logo-mobile.svg" alt="Logo-mobile">
-                <img id="burger" src="./imagenes/burger.svg" alt="Burger"> 
+                <a href="/index.html"><img class="logo" id="logo" src="/imagenes/logo-desktop.svg" alt="Logo-mobile"></a>
+                <img id="burger" src="/imagenes/burger.svg" alt="Burger"> 
             </div>
-            <ul id="titHiden" class="divCtn">   
+            <ul id="titHiden" class="divCt1n">   
                 <div class="divCtn">
                     <li> <a id="modoNocturno"></a></li>
                     <hr class="hiden">
                     <li> <a href="./HTML/favoritos.html">Favoritos</a></li>
                     <hr class="hiden">
                     <li> <a href="./HTML/misGifos.html">Mis Gifos</a></li>
-                    <li><a href=""><img src="./imagenes/button-crear-gifo.svg" alt=""></a></li>
+                    <li><a href="./HTML/crearGifos.html"><img src="./imagenes/button-crear-gifo.svg" id="creaGif" alt=""></a></li>
                 </div>
             </ul>
         </nav>
@@ -31,18 +31,23 @@
 
     <main class="titulo">
         <section class="sectionPrincipal">
+            <div class="divObserver" id="divObserver" ></div>
             <h1 class="tittle">Inspirate, busca, guarda, y crea los mejores <span class="fos">GIFOS</span></h1>
             <div class="img">
                 <img  class="imgHeader" src="./imagenes/ilustra_header.svg" alt="">
             </div>
         </section>
-        <div class="search">    
-            <input type="text" placeholder="Busca GIFOS y mas" id="btn-search">
-            <img class="imgSearch" src="./imagenes/icon-search.svg" alt="search icon">
-
-            <ul>
-                
-            </ul>
+        <div class="searchTotal" id="searchTotal">    
+            <div class="search">
+                <input type="text" placeholder="Busca GIFOS y mas" id="btn-search">
+                <img class="imgSearch" src="./imagenes/icon-search.svg" alt="search icon">
+            </div>
+            <hr id="hrInput">
+            <div class="searchRecomend" id="searchRecomend">
+                <ul id="recomendTag">
+                    <!-- Aca van aparecer las sugerencias de busquedas -->
+                </ul>
+            </div>
         </div>
     
         <div class="trending">
@@ -54,7 +59,10 @@
     <section class="resultsSearch">
         <hr>
         <h2 class="tittleResults"></h2>
-        <div id="resultsImg">
+        <div id="resultsImg"> </div>
+        <div id="empty" class="empty">
+            <img src="./imagenes/icon-busqueda-sin-resultado.svg" alt="no-results" />
+            <h2>Intenta con otra búsqueda.</h2>
         </div>
         <div class="ctnbuttonMore">
             <img id="btnMore" src="./imagenes/CTA-ver-mas.svg" alt="">
@@ -64,17 +72,26 @@
     <div class="gifos">
         <h2>Trending GIFOS</h2>
         <h3>Mira los ultimos <br class="br" > GIFOS de nuestra comunidad</h3>
-        <div id="ctnGif">   </div>  
+        <div id="ctnGif" >
+            <img class="button-slider" src="./imagenes/button-slider-left.svg" alt="Left" id="sliderL" />
+            <div id="ctnResultGif">   </div>
+            <img class="button-slider" src="./imagenes/Button-Slider-right.svg" alt="Right" id="sliderR" />
+        </div>
+
     </div>
+
+    <section class="modal" id="modal">
+        <h1 class="hide">Modal</h1>
+    </section>
 
     <footer class="footer">
         <div class="CtnFooter">
             <div class="CtnRedes">
                 <h2>Compartir en:</h2>
                 <ul>
-                    <a href="www.facebook.com"><img src="./imagenes/icon_facebook.svg" alt="fb"></a>
-                    <a href="www.twitter.com"><img src="./imagenes/icon-twitter.svg" alt="tw"></a>
-                    <a href="www.instagram.com"><img src="./imagenes/icon_instagram.svg" alt="ig"></a>
+                    <a href="www.facebook.com"><img src="./imagenes/icon_facebook.svg" alt="fb" id="iconFb"></a>
+                    <a href="www.twitter.com"><img src="./imagenes/icon-twitter.svg" alt="tw" id="iconTw"></a>
+                    <a href="www.instagram.com"><img src="./imagenes/icon_instagram.svg" alt="ig" id="iconIg"></a>
                 </ul>
             </div>
             <p>© GIFOS 2020 All Rights Reserved.</p>

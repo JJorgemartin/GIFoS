@@ -1,0 +1,175 @@
+.divCrearGifo {
+    padding-top: 100px;
+    display: flex;
+
+    .camara {
+        margin-left: 10.8%;
+        margin-right: 2px;
+    }
+
+    .externo {
+        position: relative;
+        width: 47.8%;
+        height: 390px;
+        border: 1px solid #572ee5;
+        margin-top: 4px;
+        margin-left: 1.6%;
+    }
+    h2 {
+        text-align: center;
+        margin-top: 134px;
+        color: #572ee5;
+        font-size: 25px;
+        line-height: 35px;
+        .green {
+            color: #00f3bb;
+        }
+    }
+    p {
+        text-align: center;
+        line-height: 29px;
+        font-family: "Roboto", sans-serif;
+    }
+    .loading {
+        display: none;
+        // display: block;
+        width: 518px;
+        height: 345px;
+        background-color: #562ee594;
+        position: absolute;
+        top: 20px;
+        left: 84px;
+        text-align: center;
+        .btnsCtn {
+            width: 88px;
+            height: 46px;
+            position: absolute;
+            right: 0;
+            margin: 5px;
+            display: none;
+            // display: flex;
+            .downBtn,
+            .linkBtn {
+                margin: 5px;
+                width: 32px;
+                height: 32px;
+                border-radius: 6px;
+                cursor: pointer;
+            }
+            .downBtn {
+                background-image: url("./imagenes/icon-download.svg");
+                &:hover {
+                    background-image: url("./imagenes/icon-download-hover.svg");
+                }
+            }
+            .linkBtn {
+                background-image: url("./imagenes/icon-link-normal.svg");
+                &:hover {
+                    background-image: url("./imagenes/icon-link-hover.svg");
+                }
+            }
+        }
+        img {
+            margin-top: 122px;
+        }
+        h5 {
+            font-size: 15px;
+            margin-top: 10px;
+            color: white;
+        }
+    }
+    .video {
+        display: none;
+        height: 345px;
+        margin: 20px auto;
+    }
+    .interno1 {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 27px;
+        height: 25px;
+        border-top: 1px solid #00f3bb;
+        border-left: 1px solid #00f3bb;
+    }
+    .interno2 {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 27px;
+        height: 25px;
+        border-top: 1px solid #00f3bb;
+        border-right: 1px solid #00f3bb;
+    }
+    .interno3 {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        width: 27px;
+        height: 25px;
+        border-bottom: 1px solid #00f3bb;
+        border-left: 1px solid #00f3bb;
+    }
+    .interno4 {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        width: 27px;
+        height: 25px;
+        border-bottom: 1px solid #00f3bb;
+        border-right: 1px solid #00f3bb;
+    }
+    .pelicula {
+        position: absolute;
+        right: 11.6%;
+        top: 477px;
+    }
+}
+
+.numerosCtn {
+    display: flex;
+    justify-content: center;
+    .numero {
+        width: 32px;
+        height: 32px;
+        border: 1px solid #572ee5;
+        border-radius: 50%;
+        margin: 24px 12.5px 19px;
+        text-align: center;
+        line-height: 32px;
+        font-family: "Roboto", sans-serif;
+        color: #572ee5;
+    }
+}
+
+.violetLine {
+    width: 55.3%;
+    height: 6.9px;
+    background-color: #572ee5;
+    border-radius: 20px;
+    margin: 0 auto 20.1px;
+}
+
+.crearGifoButton {
+    border: #572ee5 solid 1px;
+    border-radius: 25px;
+    height: 50px;
+    width: 127px;
+    margin: 0px 45.6% 26px;
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #572ee5;
+    font-size: 13px;
+    cursor: pointer;
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        background-color: #572ee5;
+        color: white;
+    }
+}
+.hide{
+    display: none;
+}

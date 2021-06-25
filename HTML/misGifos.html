@@ -7,20 +7,24 @@
     <link rel="stylesheet" href="/Style/style.css">
     
 </head>
-<body>
+<body class="light-theme">
     <header class="cabecera">
+        <hr class="hr-header">
         <nav> 
-            <hr class="hr-header">
             <div class="menu">
-                <img class="logo" src="/Imagenes/logo-mobile.svg" alt="Logo-mobile">
-                <img class="burger" src="/Imagenes/burger.svg" alt="">
+                <a href="/index.html"><img class="logo" src="/imagenes/logo-mobile.svg" alt="Logo-mobile"></a>
+                <img id="burger" src="/imagenes/burger.svg" alt="Burger"> 
             </div>
-            <!-- <ul>
-                <li> <a id="modoNocturno">MODO NOCTURNO</a></li>
-                <li> <a href="/HTML/favoritos.html">FAVORITOS</a></li>
-                <li> <a href="/HTML/misGifos.html">MIS GIFOS</a></li>
-                <button>+</button>
-            </ul> -->
+            <ul id="titHiden" class="divCtn">   
+                <div class="divCtn">
+                    <li> <a id="modoNocturno"></a></li>
+                    <hr class="hiden">
+                    <li> <a href="./HTML/favoritos.html">Favoritos</a></li>
+                    <hr class="hiden">
+                    <li> <a href="./HTML/misGifos.html">Mis Gifos</a></li>
+                    <li><a href=""><img src="/imagenes/button-crear-gifo.svg" alt=""></a></li>
+                </div>
+            </ul>
         </nav>
     </header>
     
@@ -32,41 +36,43 @@
 
     <div class="ctn-misGif">
         <div class="ctn-misGifos">
-            <img src="https://picsum.photos/id/23/130/100" alt="">
-            <img src="https://picsum.photos/id/25/130/100" alt="">
-            <img src="https://picsum.photos/id/423/130/100" alt="">
-            <img src="https://picsum.photos/id/614/130/100" alt="">
-            <img src="https://picsum.photos/id/634/130/100" alt="">
-            <img src="https://picsum.photos/id/654/130/100" alt="">
-            <img src="https://picsum.photos/id/42/130/100" alt="">
-            <img src="https://picsum.photos/id/664/130/100" alt="">   
+             
         </div>
         <div class="div-button">
             <img src="/Imagenes/CTA-ver-mas.svg" alt="">
         </div>
 </div>
 
-    <div class="gifos">
-        <h2>Trending GIFOS</h2>
-        <h3>Mira los ultimos <br> GIFOS de nuestra comunidad</h3>
-        <div class="ctn-gif">
-            
-            <img src="https://picsum.photos/id/3/250/190" alt="">
-            <!-- <img src="https://picsum.photos/id/3/250/190" alt="">
-            <img src="https://picsum.photos/id/3/250/190" alt=""> -->
-            
-        </div>
+<div class="gifos">
+    <h2>Trending GIFOS</h2>
+    <h3>Mira los ultimos <br class="br" > GIFOS de nuestra comunidad</h3>
+    <div id="ctnGif" >
+        <img class="button-slider" src="/imagenes/button-slider-left.svg" alt="Left" id="sliderL" />
+        <div id="ctnResultGif">   </div>
+        <img class="button-slider" src="/imagenes/Button-Slider-right.svg" alt="Right" id="sliderR" />
     </div>
 
-    <footer class="footer">
-        <h2>Compartir en:</h2>
-        <ul>
-            <a href="www.facebook.com"><img src="/Imagenes/icon_facebook.svg" alt="fb"></a>
-            <a href="www.twitter.com"><img src="/Imagenes/icon-twitter.svg" alt="tw"></a>
-            <a href="www.instagram.com"><img src="/Imagenes/icon_instagram.svg" alt="ig"></a>
-        </ul>
+</div>
+
+<section class="modal" id="modal">
+    <h1 class="hide">Modal</h1>
+</section>
+
+<footer class="footer">
+    <div class="CtnFooter">
+        <div class="CtnRedes">
+            <h2>Compartir en:</h2>
+            <ul>
+                <a href="www.facebook.com"><img src="/imagenes/icon_facebook.svg" alt="fb"></a>
+                <a href="www.twitter.com"><img src="/imagenes/icon-twitter.svg" alt="tw"></a>
+                <a href="www.instagram.com"><img src="/imagenes/icon_instagram.svg" alt="ig"></a>
+            </ul>
+        </div>
         <p>© GIFOS 2020 All Rights Reserved.</p>
-        <hr class="hr-footer">
-    </footer>
+    </div>
+    <hr class="hr-footer">
+</footer>
+
+<!-- <script src="/JS/appfav.js"></script> -->
 </body>
 </html>

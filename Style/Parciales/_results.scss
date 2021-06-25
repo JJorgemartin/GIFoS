@@ -23,10 +23,39 @@ section{
         row-gap: 25px;
         padding-left: 10px;
         margin-bottom: 30px;
+        .ctnCard{
+            img{
+                width: 100%;
+                height: 150px;
+                justify-self: center;
+            }
+            .ctnIcon{
+                display: none;
+                .iconFav, .iconDown, .iconMax{
+                    display: none;
+                }
+                .gifData{
+                    display: none;
+                }
+            }
+        }
+        
+        
+    }
+    .empty{
+        display: flex;
+        flex-direction: column;
+        display: none;
+        
         img{
-            width: 100%;
+            margin: auto;
+            align-items: center;
             height: 150px;
-            justify-self: center;
+            width: 150px;
+        }
+        h2{
+            padding-top: 20px;
+            font-size: 17px;
         }
     }
     .ctnbuttonMore{

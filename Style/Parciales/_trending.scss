@@ -14,5 +14,14 @@
         font-family: 'Montserrat', sans-serif;
         text-align: center;
         margin: 2px 75px 45px 75px;
+        &::first-letter{
+            text-transform: uppercase;
+        }
+        span{
+            cursor: pointer;  
+            &:hover{
+                color: $colorGifos;
+            }
+        }
     }
 }

@@ -25,21 +25,41 @@
         display: flex;
         flex-direction: row;
         overflow: auto;
-        margin-left: 22px;
-        img{
-            margin-left: 22px;
-            width: 243px;
-            height: 187px;
+        .button-slider{
+            display: none;
         }
+        #ctnResultGif{
+            display: flex;
+            flex-direction: row;
+            overflow: auto;
+            // scroll-behavior: smooth;
+            &::-webkit-scrollbar{
+                display: none;
+            }
+            .ctnCard{
+                .gif{
+                    margin-left: 22px;
+                    width: 243px;
+                    height: 187px;
+                    padding-right: 15px;
+                }
+                .ctnIcon{
+                    .iconFav, .iconDown, .iconMax{
+                        display: none;
+                    }
+                    .gifData{
+                        display: none;
+                    }
+                }
+            }
+        }
+        
     }
     br{
         display: block;
     }
     
-
-
 }
-
 body{
     background-color: var(--color-principal);
 }
