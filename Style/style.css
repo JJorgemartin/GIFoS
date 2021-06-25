@@ -196,6 +196,7 @@
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   background-color: var(--color-principal);
+  color: var(--color-letras2);
   text-align: left;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -206,6 +207,22 @@
   font-size: 17px;
   font-weight: 500;
   padding-left: 15px;
+}
+
+.titulo .searchTotal .search input::-webkit-input-placeholder {
+  color: var(--color-letras2);
+}
+
+.titulo .searchTotal .search input:-ms-input-placeholder {
+  color: var(--color-letras2);
+}
+
+.titulo .searchTotal .search input::-ms-input-placeholder {
+  color: var(--color-letras2);
+}
+
+.titulo .searchTotal .search input::placeholder {
+  color: var(--color-letras2);
 }
 
 .titulo .searchTotal hr {
@@ -692,22 +709,6 @@ body {
   .dark-theme .cabecera #titHiden .divCtn #modoNocturno {
     content: 'MODO DIURNO';
   }
-  .titulo .divObserver {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 420px;
-    background-color: rgba(0, 0, 0, 0.438);
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-    visibility: hidden;
-  }
-  .titulo .searchTotal .isSticky {
-    width: 23%;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-    left: 23%;
-  }
   .gifos {
     margin-top: 25px;
     margin-bottom: 50px;
@@ -793,22 +794,22 @@ body {
     cursor: pointer;
   }
   .gifos #ctnGif #ctnResultGif .ctnCard:hover .ctnIcon .iconFav {
-    background-image: url("/imagenes/icon-fav.svg");
+    background-image: url("../imagenes/icon-fav.svg");
   }
   .gifos #ctnGif #ctnResultGif .ctnCard:hover .ctnIcon .iconFav:hover {
-    background-image: url("/imagenes/icon-fav-hover.svg");
+    background-image: url("../imagenes/icon-fav-hover.svg");
   }
   .gifos #ctnGif #ctnResultGif .ctnCard:hover .ctnIcon .iconDown {
-    background-image: url("/imagenes/icon-download.svg");
+    background-image: url("../imagenes/icon-download.svg");
   }
   .gifos #ctnGif #ctnResultGif .ctnCard:hover .ctnIcon .iconDown:hover {
-    background-image: url("/imagenes/icon-download-hover.svg");
+    background-image: url("../imagenes/icon-download-hover.svg");
   }
   .gifos #ctnGif #ctnResultGif .ctnCard:hover .ctnIcon .iconMax {
-    background-image: url("/imagenes/icon-max-normal.svg");
+    background-image: url("../imagenes/icon-max-normal.svg");
   }
   .gifos #ctnGif #ctnResultGif .ctnCard:hover .ctnIcon .iconMax:hover {
-    background-image: url("/imagenes/icon-max-hover.svg");
+    background-image: url("../imagenes/icon-max-hover.svg");
   }
   .gifos #ctnGif #ctnResultGif .ctnCard:hover .ctnIcon .gifData {
     display: block;
@@ -877,22 +878,22 @@ body {
     cursor: pointer;
   }
   .resultsSearch #resultsImg .ctnCard:hover .ctnIcon .iconFav {
-    background-image: url("/imagenes/icon-fav.svg");
+    background-image: url("../imagenes/icon-fav.svg");
   }
   .resultsSearch #resultsImg .ctnCard:hover .ctnIcon .iconFav:hover {
-    background-image: url("/imagenes/icon-fav-hover.svg");
+    background-image: url("../imagenes/icon-fav-hover.svg");
   }
   .resultsSearch #resultsImg .ctnCard:hover .ctnIcon .iconDown {
-    background-image: url("/imagenes/icon-download.svg");
+    background-image: url("../imagenes/icon-download.svg");
   }
   .resultsSearch #resultsImg .ctnCard:hover .ctnIcon .iconDown:hover {
-    background-image: url("/imagenes/icon-download-hover.svg");
+    background-image: url("../imagenes/icon-download-hover.svg");
   }
   .resultsSearch #resultsImg .ctnCard:hover .ctnIcon .iconMax {
-    background-image: url("/imagenes/icon-max-normal.svg");
+    background-image: url("../imagenes/icon-max-normal.svg");
   }
   .resultsSearch #resultsImg .ctnCard:hover .ctnIcon .iconMax:hover {
-    background-image: url("/imagenes/icon-max-hover.svg");
+    background-image: url("../imagenes/icon-max-hover.svg");
   }
   .resultsSearch #resultsImg .ctnCard:hover .ctnIcon .gifData {
     display: block;
@@ -969,28 +970,28 @@ body {
     cursor: pointer;
   }
   .ctnfavtotal .resultsFavCtn .ctnCard:hover .ctnIcon .iconFav {
-    background-image: url("/imagenes/icon-fav.svg");
+    background-image: url("../imagenes/icon-fav.svg");
   }
   .ctnfavtotal .resultsFavCtn .ctnCard:hover .ctnIcon .iconFav:hover {
-    background-image: url("/imagenes/icon-fav-hover.svg");
+    background-image: url("../imagenes/icon-fav-hover.svg");
   }
   .ctnfavtotal .resultsFavCtn .ctnCard:hover .ctnIcon .itsFav {
-    background-image: url("/imagenes/icon-trash-normal.svg");
+    background-image: url("../imagenes/icon-trash-normal.svg");
   }
   .ctnfavtotal .resultsFavCtn .ctnCard:hover .ctnIcon .itsFav:hover {
-    background-image: url("/imagenes/icon-trash-hover.svg");
+    background-image: url("../imagenes/icon-trash-hover.svg");
   }
   .ctnfavtotal .resultsFavCtn .ctnCard:hover .ctnIcon .iconDown {
-    background-image: url("/imagenes/icon-download.svg");
+    background-image: url("../imagenes/icon-download.svg");
   }
   .ctnfavtotal .resultsFavCtn .ctnCard:hover .ctnIcon .iconDown:hover {
-    background-image: url("/imagenes/icon-download-hover.svg");
+    background-image: url("../imagenes/icon-download-hover.svg");
   }
   .ctnfavtotal .resultsFavCtn .ctnCard:hover .ctnIcon .iconMax {
-    background-image: url("/imagenes/icon-max-normal.svg");
+    background-image: url("../imagenes/icon-max-normal.svg");
   }
   .ctnfavtotal .resultsFavCtn .ctnCard:hover .ctnIcon .iconMax:hover {
-    background-image: url("/imagenes/icon-max-hover.svg");
+    background-image: url("../imagenes/icon-max-hover.svg");
   }
   .ctnfavtotal .resultsFavCtn .ctnCard:hover .ctnIcon .gifData {
     display: block;

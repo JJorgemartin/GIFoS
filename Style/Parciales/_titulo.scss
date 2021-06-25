@@ -62,6 +62,7 @@
                 font-family: "Roboto", sans-serif;
                 font-size: 16px;
                 background-color: var(--color-principal);
+                color: var(--color-letras2);
                 text-align: left;
                 box-sizing: border-box;
                 &:focus{
@@ -69,6 +70,9 @@
                     font-size: 17px;
                     font-weight: 500;
                     padding-left: 15px;
+                }
+                &::placeholder{
+                    color: var(--color-letras2);
                 }
             }
             
